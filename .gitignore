@@ -1,0 +1,31 @@
+# Dependencies
+node_modules/
+
+# Environment and secrets: NEVER commit these
+.env
+.env.*
+!.env.example
+
+# Build output
+dist/
+build/
+coverage/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.idea/
+
+# Terraform (state can contain secrets)
+**/.terraform/
+*.tfstate
+*.tfstate.*
+
+# Python
+__pycache__/
+.venv/
+*.pyc
